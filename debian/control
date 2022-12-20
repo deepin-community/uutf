@@ -1,0 +1,88 @@
+Source: uutf
+Section: ocaml
+Priority: optional
+Maintainer: Debian OCaml Maintainers <debian-ocaml-maint@lists.debian.org>
+Uploaders:
+ Mehdi Dogguy <mehdi@debian.org>,
+ Stéphane Glondu <glondu@debian.org>
+Build-Depends:
+ debhelper-compat (= 12),
+ ocaml-nox,
+ ocaml-findlib,
+ ocamlbuild,
+ libtopkg-ocaml-dev,
+ libuchar-ocaml-dev,
+ libcmdliner-ocaml-dev,
+ opam-installer,
+ dh-ocaml
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+Homepage: http://erratique.ch/software/uutf
+Vcs-Git: https://salsa.debian.org/ocaml-team/uutf.git
+Vcs-Browser: https://salsa.debian.org/ocaml-team/uutf
+
+Package: libuutf-ocaml-dev
+Architecture: any
+Depends:
+ ${ocaml:Depends},
+ ${shlibs:Depends},
+ ${misc:Depends}
+Suggests:
+ ocaml-findlib,
+ libuutf-ocaml-doc
+Provides:
+ ${ocaml:Provides}
+Description: Non-blocking streaming Unicode codec for OCaml (development files)
+ Uutf is an non-blocking streaming Unicode codec for OCaml to decode
+ and encode the UTF-8, UTF-16, UTF-16LE and UTF-16BE encoding
+ schemes. It can efficiently work character by character without
+ blocking on IO. Decoders perform character position tracking and
+ support newline normalization.
+ .
+ Functions are also provided to fold over the characters of UTF
+ encoded OCaml string values and to directly encode characters in
+ OCaml Buffer.t values
+ .
+ This package contains the development modules you need to use Uutf
+ in your programs and associated documentation.
+
+Package: libuutf-ocaml
+Architecture: any
+Depends:
+ ${ocaml:Depends},
+ ${shlibs:Depends},
+ ${misc:Depends}
+Suggests:
+ ocaml-findlib
+Provides:
+ ${ocaml:Provides}
+Description: Non-blocking streaming Unicode codec for OCaml (plugins)
+ Uutf is an non-blocking streaming Unicode codec for OCaml to decode
+ and encode the UTF-8, UTF-16, UTF-16LE and UTF-16BE encoding
+ schemes. It can efficiently work character by character without
+ blocking on IO. Decoders perform character position tracking and
+ support newline normalization.
+ .
+ Functions are also provided to fold over the characters of UTF
+ encoded OCaml string values and to directly encode characters in
+ OCaml Buffer.t values
+ .
+ This package contains dynamically loadable modules for plugins.
+
+Package: libuutf-ocaml-doc
+Section: doc
+Architecture: all
+Depends:
+ ${misc:Depends}
+Description: Non-blocking streaming Unicode codec for OCaml (documentation)
+ Uutf is an non-blocking streaming Unicode codec for OCaml to decode
+ and encode the UTF-8, UTF-16, UTF-16LE and UTF-16BE encoding
+ schemes. It can efficiently work character by character without
+ blocking on IO. Decoders perform character position tracking and
+ support newline normalization.
+ .
+ Functions are also provided to fold over the characters of UTF
+ encoded OCaml string values and to directly encode characters in
+ OCaml Buffer.t values
+ .
+ This package contains the documentation of Uutf.

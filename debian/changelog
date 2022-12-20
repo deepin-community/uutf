@@ -1,0 +1,55 @@
+uutf (1.0.2-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:49:19 +0800
+
+uutf (1.0.2-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump debhelper compat level to 12
+  * Bump Standards-Version to 4.5.0
+  * Add Rules-Requires-Root: no
+
+ -- Stéphane Glondu <glondu@debian.org>  Wed, 29 Jan 2020 09:49:01 +0100
+
+uutf (1.0.1-2) unstable; urgency=medium
+
+  * Bump minimal required version of OCaml to 4.03
+  * Patch META file to remove uchar as a dependency
+  * Use canonical URI for Vcs-Git field
+  * Bump minimal required version for Debhelper to 11
+
+ -- Mehdi Dogguy <mehdi@debian.org>  Mon, 21 May 2018 12:12:35 +0200
+
+uutf (1.0.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump Debhelper compat 11, no changes required
+  * Bump Standards Version to 4.1.4, no changes required
+  * Update Vcs-* fields since Git repository migrated to Salsa
+
+ -- Mehdi Dogguy <mehdi@debian.org>  Thu, 10 May 2018 13:56:28 +0200
+
+uutf (0.9.4-3) unstable; urgency=medium
+
+  * Add ocamlbuild to Build-Depends
+
+ -- Stéphane Glondu <glondu@debian.org>  Sat, 15 Jul 2017 12:29:40 +0200
+
+uutf (0.9.4-2) unstable; urgency=medium
+
+  * Team upload.
+  * Pull sources from the build path for building documentation.
+    (Closes: #806210)
+  * debian/control: Use HTTPS for Vcs-* links
+  * debian/control: Bump Standards-Version to 3.9.8.
+    No change required
+
+ -- Nicolas Braud-Santoni <nicolas@braud-santoni.eu>  Sat, 30 Jul 2016 00:48:24 +0200
+
+uutf (0.9.4-1) unstable; urgency=medium
+
+  * Initial upload (Closes: #793056)
+
+ -- Mehdi Dogguy <mehdi@debian.org>  Wed, 22 Jul 2015 01:07:26 +0000
