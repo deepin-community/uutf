@@ -14,13 +14,8 @@ override_dh_auto_build:
 	ocaml pkg/pkg.ml build --with-cmdliner true --tests true
 
 override_dh_auto_test:
-ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
 	ocaml pkg/pkg.ml test
-endif
 
 override_dh_auto_install:
 	opam-installer --prefix=$(DESTDIR) --libdir=.$(OCAML_STDLIB_DIR) uutf.install
 	rm -f $(DESTDIR)/doc/uutf/LICENSE.md
-
-override_dh_missing:
-	dh_missing --fail-missing
