@@ -1,8 +1,16 @@
-uutf (1.0.2-deepin1) unstable; urgency=medium
+uutf (1.0.3-1) unstable; urgency=medium
 
-  * Rebuild
+  [ Stéphane Glondu ]
+  * New upstream release
 
- -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:49:19 +0800
+  [ Debian Janitor ]
+  * libuutf-ocaml-doc: Add Multi-Arch: foreign
+  * Update watch file format version to 4
+  * Use secure URI in Homepage field
+  * Bump debhelper from old 12 to 13
+  * Update standards version to 4.6.0, no changes needed
+
+ -- Stéphane Glondu <glondu@debian.org>  Sun, 20 Feb 2022 17:39:31 +0100
 
 uutf (1.0.2-1) unstable; urgency=medium
 
